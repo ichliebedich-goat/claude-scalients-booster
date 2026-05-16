@@ -1,13 +1,11 @@
 import { useEffect, useState } from "react";
 
 const lines = [
-  { prefix: "→", text: "Booting Scalients ops console...", color: "text-muted-foreground" },
-  { prefix: "✓", text: "Meta Ads: 3 campaigns scaled · ROAS 4.8x", color: "text-emerald-400" },
-  { prefix: "→", text: "Google Ads: bid automation running...", color: "text-muted-foreground" },
-  { prefix: "✓", text: "Cost/lead reduced 38% week-over-week", color: "text-emerald-400" },
-  { prefix: "→", text: "AI receptionist answered 47 calls today", color: "text-muted-foreground" },
-  { prefix: "✓", text: "29 appointments booked → est. +$86K pipeline", color: "text-primary" },
-  { prefix: "✓", text: "All systems nominal. Standing by.", color: "text-primary" },
+  { prefix: "$", text: "scalients launch --campaign meta-q2", color: "text-foreground" },
+  { prefix: "→", text: "Deploying AI receptionist agent...", color: "text-muted-foreground" },
+  { prefix: "→", text: "Connecting Meta Ads account... done", color: "text-muted-foreground" },
+  { prefix: "→", text: "Optimizing audience targeting... done", color: "text-muted-foreground" },
+  { prefix: "✓", text: "Campaign live — 1,240 leads captured this month", color: "text-emerald-400" },
 ];
 
 const TerminalAnimation = () => {
@@ -32,9 +30,9 @@ const TerminalAnimation = () => {
         <div className="w-3 h-3 rounded-full bg-red-500/60" />
         <div className="w-3 h-3 rounded-full bg-yellow-500/60" />
         <div className="w-3 h-3 rounded-full bg-emerald-500/60" />
-        <span className="ml-2 text-xs text-muted-foreground">scalients-dashboard-v1.0</span>
+        <span className="ml-2 text-xs text-muted-foreground">scalients-agent-v2.1</span>
       </div>
-      <div className="space-y-2 min-h-[200px]">
+      <div className="space-y-2 min-h-[160px]">
         {lines.slice(0, visibleLines).map((line, i) => (
           <div key={i} className={`${line.color} flex gap-2`}>
             <span className="text-muted-foreground/60">{line.prefix}</span>
