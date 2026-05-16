@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <a href="#" className="text-lg font-semibold tracking-tight text-foreground">
-            <span className="text-primary">[</span>systemic<span className="text-primary">]</span>
+            <span className="text-primary">[</span>scalients<span className="text-primary">]</span>
           </a>
 
           <div className="flex items-center gap-6">
@@ -20,7 +20,7 @@ const Footer = () => {
           </div>
 
           <p className="text-xs text-muted-foreground">
-            © 2026 Systemic AI. All rights reserved.
+            © 2026 Scalients. All rights reserved.
           </p>
         </div>
       </div>
