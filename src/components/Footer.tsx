@@ -19,9 +19,14 @@ const Footer = () => {
             ))}
           </div>
 
-          <p className="text-xs text-muted-foreground">
-            © 2026 Scalients. All rights reserved.
-          </p>
+          <div className="flex items-center gap-4">
+            <a href="#stats" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
+              Stats
+            </a>
+            <p className="text-xs text-muted-foreground">
+              © 2026 Scalients. All rights reserved.
+            </p>
+          </div>
         </div>
       </div>
     </footer>
