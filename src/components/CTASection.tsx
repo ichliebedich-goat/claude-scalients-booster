@@ -1,31 +1,34 @@
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
 
 const transition = { duration: 0.3, ease: [0.2, 0, 0, 1] as const };
 
 const CTASection = () => {
   return (
-    <section id="contact" className="py-24 md:py-32">
+    <section id="contact" className="py-24 md:py-32 relative">
+      {/* Radial glow */}
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-[radial-gradient(ellipse,rgba(99,102,241,0.05),transparent_65%)] pointer-events-none" />
+
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={transition}
-          className="card-surface p-12 md:p-16 text-center max-w-3xl mx-auto relative overflow-hidden"
+          className="text-center max-w-2xl mx-auto relative z-10"
         >
-          <div className="absolute inset-0 bg-grid opacity-50" />
-          <div className="relative z-10">
-            <h2 className="text-foreground mb-4">Ready to scale?</h2>
-            <p className="text-lg text-muted-foreground max-w-md mx-auto mb-8">
-              Book a 30-minute growth call. We'll map your highest-ROI ad and AI opportunities.
-            </p>
-            <a href="#" className="inline-flex items-center gap-2 px-8 py-3.5 text-sm font-medium bg-foreground text-background rounded-md hover:scale-[0.98] transition-transform duration-200">
-              Book a Free Call
-              <ArrowRight className="w-4 h-4" />
-            </a>
-            <p className="text-xs text-muted-foreground mt-4">Free consultation · No commitment required</p>
-          </div>
+          <h2 className="text-foreground mb-4">Ready to scale?</h2>
+          <p className="text-lg text-muted-foreground max-w-md mx-auto mb-8 leading-relaxed">
+            Book a free strategy call. We'll show you exactly how AI ads and automation can grow your business.
+          </p>
+          <a
+            href="#"
+            className="inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 shadow-[0_0_20px_rgba(99,102,241,0.2)] hover:shadow-[0_0_30px_rgba(99,102,241,0.35)] transition-all duration-200"
+          >
+            Book a Free Call
+          </a>
+          <p className="text-xs text-muted-foreground mt-5">
+            Free consultation &middot; No commitment required
+          </p>
         </motion.div>
       </div>
     </section>

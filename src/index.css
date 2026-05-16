@@ -15,7 +15,7 @@
     --popover: 240 6% 6%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 217 91% 60%;
+    --primary: 239 84% 67%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 240 4% 16%;
@@ -24,7 +24,7 @@
     --muted: 240 4% 16%;
     --muted-foreground: 240 5% 65%;
 
-    --accent: 217 91% 60%;
+    --accent: 239 84% 67%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -32,24 +32,24 @@
 
     --border: 240 4% 16%;
     --input: 240 4% 16%;
-    --ring: 217 91% 60%;
+    --ring: 239 84% 67%;
 
     --radius: 0.75rem;
 
     --sidebar-background: 240 6% 6%;
     --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary: 239 84% 67%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 240 4% 16%;
     --sidebar-accent-foreground: 0 0% 98%;
     --sidebar-border: 240 4% 16%;
-    --sidebar-ring: 217 91% 60%;
+    --sidebar-ring: 239 84% 67%;
 
     /* Custom tokens */
     --surface: 240 6% 5.5%;
     --surface-hover: 240 6% 8%;
     --text-secondary: 240 5% 65%;
-    --glow-primary: 217 91% 60%;
+    --glow-primary: 239 84% 67%;
   }
 }
 
@@ -122,4 +122,43 @@
   .tabular-nums {
     font-variant-numeric: tabular-nums;
   }
+
+  /* HUD Panel animations */
+  .hud-grow {
+    animation: hudGrow 0.8s ease-out forwards;
+    transform-origin: bottom;
+  }
+
+  .hud-ring-animate {
+    animation: hudRing 1.5s ease-out forwards;
+    stroke-dashoffset: 264;
+  }
+
+  .hud-pulse-bar {
+    animation: hudPulse 1.5s ease-in-out infinite;
+  }
+
+  .hud-bar-chart {
+    animation: hudGrow 0.8s ease-out forwards;
+    transform-origin: bottom;
+  }
+}
+
+@keyframes hudGrow {
+  from { transform: scaleY(0); }
+  to { transform: scaleY(1); }
+}
+
+@keyframes hudRing {
+  to { stroke-dashoffset: 40; }
+}
+
+@keyframes hudPulse {
+  0%, 100% { background: rgba(99, 102, 241, 0.08); }
+  50% { background: rgba(99, 102, 241, 0.35); }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
