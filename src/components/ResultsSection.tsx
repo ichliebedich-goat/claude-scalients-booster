@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import heroDashboard from "@/assets/hero-dashboard.jpg";
 
 const caseStudies = [
-  { metric: "+$142K/mo", label: "Revenue generated through automated lead scoring", detail: "Deployed in 3 weeks for a B2B SaaS company" },
-  { metric: "12.5x ROI", label: "Maintained consistently over 6 months", detail: "AI-powered ad optimization pipeline" },
-  { metric: "89% faster", label: "Document processing time reduction", detail: "Custom extraction model for financial services" },
+  { metric: "4.8x ROAS", label: "Sustained on Meta Ads over 90 days", detail: "Home services brand, $80K/mo ad spend" },
+  { metric: "-38% CPL", label: "Cost per lead reduction on Google Ads", detail: "Med spa group, Performance Max + Search" },
+  { metric: "1,200+ calls", label: "Handled monthly by the AI receptionist", detail: "Dental practice, 24/7 booking and triage" },
 ];
 
 const transition = { duration: 0.3, ease: [0.2, 0, 0, 1] as const };
