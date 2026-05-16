@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl" style={{ boxShadow: "0 1px 0 rgba(255,255,255,0.06)" }}>
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         <a href="#" className="text-xl font-semibold tracking-tight text-foreground">
-          <span className="text-primary">[</span>systemic<span className="text-primary">]</span>
+          <span className="text-primary">[</span>scalients<span className="text-primary">]</span>
         </a>
 
         <div className="hidden md:flex items-center gap-8">
@@ -29,7 +29,7 @@ const Navbar = () => {
           href="#contact"
           className="hidden md:inline-flex items-center px-5 py-2.5 text-sm font-medium bg-foreground text-background rounded-md hover:scale-[0.98] transition-transform duration-200"
         >
-          Book Audit
+          Book a Call
         </a>
 
         <button
@@ -60,7 +60,7 @@ const Navbar = () => {
             href="#contact"
             className="block w-full text-center px-5 py-2.5 text-sm font-medium bg-foreground text-background rounded-md"
           >
-            Book Audit
+            Book a Call
           </a>
         </motion.div>
       )}
