@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const stats = [
-  { value: "$7.5M+", label: "Revenue generated for clients" },
-  { value: "200+", label: "AI workflows deployed" },
-  { value: "50+", label: "Enterprise partners" },
-  { value: "12x", label: "Average ROI" },
+  { value: "$24M+", label: "Ad spend managed across Meta & Google" },
+  { value: "5.2x", label: "Average client ROAS" },
+  { value: "120+", label: "Brands scaled with paid media" },
+  { value: "40K+", label: "Calls handled by AI receptionists" },
 ];
 
 const transition = { duration: 0.3, ease: [0.2, 0, 0, 1] as const };
