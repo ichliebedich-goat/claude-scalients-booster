@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 
 const lines = [
-  { prefix: "→", text: "Initializing agent pipeline...", color: "text-muted-foreground" },
-  { prefix: "✓", text: "Connected to LLM endpoint", color: "text-emerald-400" },
-  { prefix: "→", text: "Processing 2,847 customer records...", color: "text-muted-foreground" },
-  { prefix: "✓", text: "Sentiment analysis: 94.2% positive", color: "text-emerald-400" },
-  { prefix: "→", text: "Generating campaign recommendations...", color: "text-muted-foreground" },
-  { prefix: "✓", text: "3 workflows deployed → est. +$142K/mo", color: "text-primary" },
-  { prefix: "✓", text: "ROI projection: 12.5x in 30 days", color: "text-primary" },
+  { prefix: "→", text: "Booting Scalients ops console...", color: "text-muted-foreground" },
+  { prefix: "✓", text: "Meta Ads: 3 campaigns scaled · ROAS 4.8x", color: "text-emerald-400" },
+  { prefix: "→", text: "Google Ads: bid automation running...", color: "text-muted-foreground" },
+  { prefix: "✓", text: "Cost/lead reduced 38% week-over-week", color: "text-emerald-400" },
+  { prefix: "→", text: "AI receptionist answered 47 calls today", color: "text-muted-foreground" },
+  { prefix: "✓", text: "29 appointments booked → est. +$86K pipeline", color: "text-primary" },
+  { prefix: "✓", text: "All systems nominal. Standing by.", color: "text-primary" },
 ];
 
 const TerminalAnimation = () => {
@@ -32,7 +32,7 @@ const TerminalAnimation = () => {
         <div className="w-3 h-3 rounded-full bg-red-500/60" />
         <div className="w-3 h-3 rounded-full bg-yellow-500/60" />
         <div className="w-3 h-3 rounded-full bg-emerald-500/60" />
-        <span className="ml-2 text-xs text-muted-foreground">systemic-agent-v3.2</span>
+        <span className="ml-2 text-xs text-muted-foreground">scalients-ops-v1.0</span>
       </div>
       <div className="space-y-2 min-h-[200px]">
         {lines.slice(0, visibleLines).map((line, i) => (
