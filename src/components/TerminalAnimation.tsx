@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 
 const lines = [
   { prefix: "$", prefixColor: "text-primary", text: <span>scalients launch --campaign meta-q2</span>, color: "text-foreground" },
-  { prefix: "→", prefixColor: "text-muted-foreground/60", text: <span>Deploying AI receptionist agent...</span>, color: "text-muted-foreground" },
-  { prefix: "→", prefixColor: "text-muted-foreground/60", text: <span>Connecting Meta Ads account... <span className="text-emerald-400">done</span></span>, color: "text-muted-foreground" },
-  { prefix: "→", prefixColor: "text-muted-foreground/60", text: <span>Optimizing audience targeting... <span className="text-emerald-400">done</span></span>, color: "text-muted-foreground" },
-  { prefix: "✓", prefixColor: "text-emerald-400", text: <span>Campaign live — 1,240 leads captured this month</span>, color: "text-emerald-400" },
+  { prefix: "", prefixColor: "", text: <span>Deploying AI receptionist agent...</span>, color: "text-muted-foreground" },
+  { prefix: "", prefixColor: "", text: <span>Connecting Meta Ads account... <span className="text-green-500">done</span></span>, color: "text-muted-foreground" },
+  { prefix: "", prefixColor: "", text: <span>Optimizing audience targeting... <span className="text-green-500">done</span></span>, color: "text-muted-foreground" },
+  { prefix: "✓", prefixColor: "text-green-500", text: <span>Campaign live — 1,240 leads captured this month</span>, color: "text-green-500" },
 ];
 
 const TerminalAnimation = () => {
@@ -25,14 +25,14 @@ const TerminalAnimation = () => {
   }, []);
 
   return (
-    <div className="card-surface p-6 font-mono text-sm">
+    <div className="p-6 font-mono" style={{ background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.06)', borderRadius: 12, boxShadow: '0 0 40px rgba(0,0,0,0.4)' }}>
       <div className="flex items-center gap-2 mb-4">
-        <div className="w-3 h-3 rounded-full bg-red-500/60" />
-        <div className="w-3 h-3 rounded-full bg-yellow-500/60" />
-        <div className="w-3 h-3 rounded-full bg-emerald-500/60" />
-        <span className="ml-2 text-xs text-muted-foreground">scalients-agent-v2.1</span>
+        <div className="w-2.5 h-2.5 rounded-full bg-red-500" />
+        <div className="w-2.5 h-2.5 rounded-full bg-yellow-500" />
+        <div className="w-2.5 h-2.5 rounded-full bg-green-500" />
+        <span className="ml-2 text-muted-foreground" style={{ fontSize: '.72rem' }}>scalients-agent-v2.1</span>
       </div>
-      <div className="space-y-2 min-h-[160px]">
+      <div className="min-h-[160px]" style={{ fontSize: '.78rem', lineHeight: '1.9' }}>
         {lines.slice(0, visibleLines).map((line, i) => (
           <div key={i} className={`${line.color} flex gap-2`}>
             <span className={line.prefixColor}>{line.prefix}</span>
