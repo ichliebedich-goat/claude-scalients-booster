@@ -13,7 +13,7 @@ const Navbar = () => {
         </a>
 
         <div className="hidden md:flex items-center gap-8">
-          {["Services", "Results", "Process", "Contact"].map((item) => (
+          {["Services", "Results", "Stats", "Contact"].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
@@ -48,7 +48,7 @@ const Navbar = () => {
           animate={{ opacity: 1, y: 0 }}
           className="md:hidden border-t border-border bg-background px-6 py-4 space-y-3"
         >
-          {["Services", "Results", "Process", "Contact"].map((item) => (
+          {["Services", "Results", "Stats", "Contact"].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}

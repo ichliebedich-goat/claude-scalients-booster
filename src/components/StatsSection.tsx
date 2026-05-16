@@ -11,7 +11,7 @@ const transition = { duration: 0.3, ease: [0.2, 0, 0, 1] as const };
 
 const StatsSection = () => {
   return (
-    <section className="py-24 border-t border-border/50">
+    <section id="stats" className="py-24 border-t border-border/50">
       <div className="container mx-auto px-6">
         <motion.div initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={transition} className="mb-16">
           <span className="font-mono text-xs font-semibold text-primary uppercase tracking-widest mb-3 block">
