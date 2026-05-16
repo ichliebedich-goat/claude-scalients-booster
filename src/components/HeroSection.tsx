@@ -15,7 +15,7 @@ const HeroSection = () => {
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 mb-6">
               <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
-              <span className="text-xs font-medium text-primary font-mono">Now Booking Q3 Clients</span>
+              <span className="text-xs font-medium text-primary font-mono">Scalients...</span>
             </div>
             <h1 className="text-foreground mb-6">
               Paid Ads & AI Agents That Scale Your Pipeline.
@@ -25,10 +25,10 @@ const HeroSection = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="#contact" className="inline-flex items-center justify-center px-6 py-3 text-sm font-medium bg-foreground text-background rounded-md hover:scale-[0.98] transition-transform duration-200">
-                Book a Free Audit
+                Book a Free Call
               </a>
               <a href="#services" className="inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-muted-foreground border border-border rounded-md hover:text-foreground hover:border-foreground/20 transition-colors duration-200">
-                View Capabilities
+                View Services
               </a>
             </div>
           </motion.div>

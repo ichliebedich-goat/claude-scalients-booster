@@ -32,7 +32,7 @@ const TerminalAnimation = () => {
         <div className="w-3 h-3 rounded-full bg-red-500/60" />
         <div className="w-3 h-3 rounded-full bg-yellow-500/60" />
         <div className="w-3 h-3 rounded-full bg-emerald-500/60" />
-        <span className="ml-2 text-xs text-muted-foreground">scalients-ops-v1.0</span>
+        <span className="ml-2 text-xs text-muted-foreground">scalients-dashboard-v1.0</span>
       </div>
       <div className="space-y-2 min-h-[200px]">
         {lines.slice(0, visibleLines).map((line, i) => (
