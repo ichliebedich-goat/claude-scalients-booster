@@ -16,12 +16,12 @@ const CTASection = () => {
         >
           <div className="absolute inset-0 bg-grid opacity-50" />
           <div className="relative z-10">
-            <h2 className="text-foreground mb-4">Ready to automate?</h2>
+            <h2 className="text-foreground mb-4">Ready to scale?</h2>
             <p className="text-lg text-muted-foreground max-w-md mx-auto mb-8">
-              Book a 30-minute technical audit. We'll map your highest-ROI automation opportunities.
+              Book a 30-minute growth audit. We'll map your highest-ROI ad and AI opportunities.
             </p>
             <a href="#" className="inline-flex items-center gap-2 px-8 py-3.5 text-sm font-medium bg-foreground text-background rounded-md hover:scale-[0.98] transition-transform duration-200">
-              Book Technical Audit
+              Book Growth Audit
               <ArrowRight className="w-4 h-4" />
             </a>
             <p className="text-xs text-muted-foreground mt-4">Free consultation · No commitment required</p>
