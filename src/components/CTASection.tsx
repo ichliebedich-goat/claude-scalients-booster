@@ -21,7 +21,9 @@ const CTASection = () => {
             Book a free strategy call. We'll show you exactly how AI ads and automation can grow your business.
           </p>
           <a
-            href="#"
+            href="https://cal.com/scalients/scalients-30-day-strategy"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 shadow-[0_0_20px_rgba(99,102,241,0.2)] hover:shadow-[0_0_30px_rgba(99,102,241,0.35)] transition-all duration-200"
           >
             Book a Free Call

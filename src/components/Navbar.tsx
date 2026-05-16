@@ -26,7 +26,9 @@ const Navbar = () => {
         </div>
 
         <a
-          href="#contact"
+          href="https://cal.com/scalients/scalients-30-day-strategy"
+          target="_blank"
+          rel="noopener noreferrer"
           className="hidden md:inline-flex items-center px-5 py-2.5 text-sm font-medium bg-foreground text-background rounded-md hover:scale-[0.98] transition-transform duration-200"
         >
           Book a Call
@@ -57,7 +59,9 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="#contact"
+            href="https://cal.com/scalients/scalients-30-day-strategy"
+            target="_blank"
+            rel="noopener noreferrer"
             className="block w-full text-center px-5 py-2.5 text-sm font-medium bg-foreground text-background rounded-md"
           >
             Book a Call
