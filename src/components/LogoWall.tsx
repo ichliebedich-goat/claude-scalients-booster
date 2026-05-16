@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
 const logos = [
-  "OpenAI", "Anthropic", "LangChain", "Pinecone", "Vercel",
-  "AWS", "Hugging Face", "Cohere",
+  "Meta Ads", "Google Ads", "TikTok Ads", "YouTube", "GA4",
+  "HubSpot", "OpenAI", "Twilio", "Zapier", "GoHighLevel",
 ];
 
 const LogoWall = () => {
@@ -15,7 +15,7 @@ const LogoWall = () => {
           viewport={{ once: true }}
           className="text-center text-sm text-muted-foreground mb-10"
         >
-          Integrated with leading AI infrastructure
+          Plugged into the platforms your business already runs on
         </motion.p>
         <div className="overflow-hidden">
           <div className="flex animate-scroll-logos">
