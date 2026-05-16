@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 
 const lines = [
-  { prefix: "$", text: "scalients launch --campaign meta-q2", color: "text-foreground" },
-  { prefix: "→", text: "Deploying AI receptionist agent...", color: "text-muted-foreground" },
-  { prefix: "→", text: "Connecting Meta Ads account... done", color: "text-muted-foreground" },
-  { prefix: "→", text: "Optimizing audience targeting... done", color: "text-muted-foreground" },
-  { prefix: "✓", text: "Campaign live — 1,240 leads captured this month", color: "text-emerald-400" },
+  { prefix: "$", prefixColor: "text-primary", text: <span>scalients launch --campaign meta-q2</span>, color: "text-foreground" },
+  { prefix: "→", prefixColor: "text-muted-foreground/60", text: <span>Deploying AI receptionist agent...</span>, color: "text-muted-foreground" },
+  { prefix: "→", prefixColor: "text-muted-foreground/60", text: <span>Connecting Meta Ads account... <span className="text-emerald-400">done</span></span>, color: "text-muted-foreground" },
+  { prefix: "→", prefixColor: "text-muted-foreground/60", text: <span>Optimizing audience targeting... <span className="text-emerald-400">done</span></span>, color: "text-muted-foreground" },
+  { prefix: "✓", prefixColor: "text-emerald-400", text: <span>Campaign live — 1,240 leads captured this month</span>, color: "text-emerald-400" },
 ];
 
 const TerminalAnimation = () => {
@@ -35,7 +35,7 @@ const TerminalAnimation = () => {
       <div className="space-y-2 min-h-[160px]">
         {lines.slice(0, visibleLines).map((line, i) => (
           <div key={i} className={`${line.color} flex gap-2`}>
-            <span className="text-muted-foreground/60">{line.prefix}</span>
+            <span className={line.prefixColor}>{line.prefix}</span>
             <span>{line.text}</span>
           </div>
         ))}
