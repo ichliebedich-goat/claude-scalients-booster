@@ -28,14 +28,14 @@ const TerminalAnimation = () => {
   }, []);
 
   return (
-    <div className="p-6 font-mono" style={{ background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.06)', borderRadius: 12, boxShadow: '0 0 40px rgba(0,0,0,0.4)' }}>
-      <div className="flex items-center gap-2 mb-4">
-        <div className="w-2.5 h-2.5 rounded-full bg-red-500" />
-        <div className="w-2.5 h-2.5 rounded-full bg-yellow-500" />
-        <div className="w-2.5 h-2.5 rounded-full bg-green-500" />
-        <span className="ml-2 text-muted-foreground" style={{ fontSize: '.72rem' }}>scalients-dashboard</span>
+    <div className="p-8 font-mono" style={{ background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.06)', borderRadius: 12, boxShadow: '0 0 40px rgba(0,0,0,0.4)' }}>
+      <div className="flex items-center gap-2 mb-5">
+        <div className="w-3 h-3 rounded-full bg-red-500" />
+        <div className="w-3 h-3 rounded-full bg-yellow-500" />
+        <div className="w-3 h-3 rounded-full bg-green-500" />
+        <span className="ml-2 text-muted-foreground" style={{ fontSize: '.82rem' }}>scalients-dashboard-v2.1</span>
       </div>
-      <div style={{ fontSize: '.78rem', lineHeight: '1.9' }}>
+      <div style={{ fontSize: '.88rem', lineHeight: '2' }}>
         {lines.slice(0, visibleLines).map((line, i) => (
           <div key={i} className={`${line.color} flex gap-2`}>
             <span className={line.prefixColor}>{line.prefix}</span>
@@ -43,7 +43,7 @@ const TerminalAnimation = () => {
           </div>
         ))}
         {visibleLines < lines.length && (
-          <span className="inline-block w-2 h-4 bg-primary animate-terminal-blink" />
+          <span className="inline-block w-2.5 h-5 bg-primary animate-terminal-blink" />
         )}
       </div>
     </div>
