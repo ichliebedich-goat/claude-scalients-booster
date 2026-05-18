@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl" style={{ boxShadow: "0 1px 0 rgba(255,255,255,0.06)" }}>
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
-        <a href="#" className="text-xl font-semibold tracking-tight text-foreground">
+        <a href="/" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }} className="text-xl font-semibold tracking-tight text-foreground">
           <span className="text-primary">[</span>scalients<span className="text-primary">]</span>
         </a>
 

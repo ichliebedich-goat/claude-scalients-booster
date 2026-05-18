@@ -10,7 +10,7 @@ const Footer = () => {
     <footer className="border-t border-border/50 py-12">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          <a href="#" className="text-lg font-semibold tracking-tight text-foreground">
+          <a href="/" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }} className="text-lg font-semibold tracking-tight text-foreground">
             <span className="text-primary">[</span>scalients<span className="text-primary">]</span>
           </a>
 
