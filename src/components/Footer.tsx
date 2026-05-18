@@ -1,3 +1,10 @@
+const scrollToSection = (id: string) => {
+  const el = document.getElementById(id);
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
 const Footer = () => {
   return (
     <footer className="border-t border-border/50 py-12">
@@ -9,13 +16,13 @@ const Footer = () => {
 
           <div className="flex items-center gap-6">
             {["Services", "Results", "Stats", "Contact"].map((item) => (
-              <a
+              <button
                 key={item}
-                href={`#${item.toLowerCase()}`}
+                onClick={() => scrollToSection(item.toLowerCase())}
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors"
               >
                 {item}
-              </a>
+              </button>
             ))}
           </div>
 

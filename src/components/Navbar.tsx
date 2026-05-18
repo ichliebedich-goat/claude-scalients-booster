@@ -2,6 +2,13 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
+const scrollToSection = (id: string) => {
+  const el = document.getElementById(id);
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -14,14 +21,14 @@ const Navbar = () => {
 
         <div className="hidden md:flex items-center gap-8">
           {["Services", "Results", "Stats", "Contact"].map((item) => (
-            <a
+            <button
               key={item}
-              href={`#${item.toLowerCase()}`}
+              onClick={() => scrollToSection(item.toLowerCase())}
               className="relative text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 group"
             >
               {item}
               <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-primary transition-all duration-200 group-hover:w-full origin-left" />
-            </a>
+            </button>
           ))}
         </div>
 
@@ -49,14 +56,13 @@ const Navbar = () => {
           className="md:hidden border-t border-border bg-background px-6 py-4 space-y-3"
         >
           {["Services", "Results", "Stats", "Contact"].map((item) => (
-            <a
+            <button
               key={item}
-              href={`#${item.toLowerCase()}`}
-              onClick={() => setIsOpen(false)}
-              className="block text-sm text-muted-foreground hover:text-foreground"
+              onClick={() => { scrollToSection(item.toLowerCase()); setIsOpen(false); }}
+              className="block text-sm text-muted-foreground hover:text-foreground text-left w-full"
             >
               {item}
-            </a>
+            </button>
           ))}
           <a
             href="https://cal.com/scalients/scalients-30-day-strategy"

@@ -3,6 +3,12 @@ import TerminalAnimation from "./TerminalAnimation";
 
 const transition = { duration: 0.5, ease: [0.2, 0, 0, 1] as const };
 
+const scrollToSection = (id: string) => {
+  const el = document.getElementById(id);
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth" });
+  }
+};
 
 const HeroSection = () => {
   return (
@@ -31,9 +37,9 @@ const HeroSection = () => {
               <a href="https://cal.com/scalients/scalients-30-day-strategy" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 shadow-[0_0_20px_rgba(99,102,241,0.2)] hover:shadow-[0_0_30px_rgba(99,102,241,0.35)] transition-all duration-200">
                 Book a Free Call
               </a>
-              <a href="#services" className="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-muted-foreground border border-border rounded-lg hover:text-foreground hover:border-foreground/20 hover:bg-white/[0.03] transition-all duration-200">
+              <button onClick={() => scrollToSection("services")} className="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-muted-foreground border border-border rounded-lg hover:text-foreground hover:border-foreground/20 hover:bg-white/[0.03] transition-all duration-200">
                 See What We Do
-              </a>
+              </button>
             </div>
           </motion.div>
           <motion.div
